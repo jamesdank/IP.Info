@@ -13,7 +13,6 @@ function ip.info () {
 
     /usr/bin/php  "ip.info.php"
 
-
     if test -f "ip.info.txt"; then
         rm "ip.info.txt"
     fi
