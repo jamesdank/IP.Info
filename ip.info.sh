@@ -2,7 +2,7 @@
 
 function ip.info () {
     echo -e "\n\e[4mIP Address (blank for your info):\e[0m "
-    read -p "IP Address: " ip
+    read -rp "IP Address: " ip
 
     if [ -z "$ip" ]; then
         echo -ne "\n \033[01;33mInternal IP   \033[01;37m>\033[01;32m   ";   hostname -I | cut -d ' ' -f1
@@ -18,3 +18,5 @@ function ip.info () {
     fi
      
 }
+
+ip.info
